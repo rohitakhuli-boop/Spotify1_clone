@@ -1,0 +1,44 @@
+.boder{
+    border: 2px solid black;
+    margin:3px;
+}
+.justify-content{
+    justify-content: center;
+}
+.align-item{
+    align-items: center;
+}
+.display{
+    display:flex;
+}
+.rounded{
+    border-radius:10px ;
+}
+.m-1{
+    margin: 5px;
+    
+
+}
+.invert{
+    filter: invert(1);
+}
+.bg-gray{
+    background-color:#201e1e ;
+}
+.bg-black{
+    background-color: black;
+    color:white;
+}
+.p-1{
+    padding: 10px;
+}
+body {
+  scrollbar-color: #555 #333; /* thumb color, track color */
+  scrollbar-width: thin; /* or auto */
+}
+
+/* For a dark website, you would also set the background and text colors */
+body {
+  background-color: #1a1a1a;
+  color: #f0f0f0;
+}

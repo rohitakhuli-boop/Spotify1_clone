@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+:root{
+    --a:0;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+    color:white;
+}
+
+.left{
+    width: 25vw;
+    padding: 10pxpx;
+}
+.right{
+    width:75vw;
+    position: relative;
+}
+.home ul li{
+    display: flex;
+    width:23px;
+    gap: 8px;
+     list-style: none;
+     padding-top: 14px;
+     font-weight: bold;
+}
+
+.heading{
+ display: flex;
+
+    gap: 8px;
+     
+     padding-top: 14px;
+     padding: 13px 1px;
+     font-weight: bold;   
+     align-items: center;
+     font-size: 11px;
+}
+.heading img{
+    width: 30px;
+}
+.library{
+   min-height: 78vh; 
+   position: relative;
+}
+.footer{
+    display: flex;
+    font-size: 9px;
+    gap: 13px;
+    position: absolute;
+    bottom: 0;
+    padding: 10px 0;
+}
+.footer a{
+    color: grey;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(56, 54, 54);
+}
+.header *{
+padding: 8px;
+}
+.SpotifYplaylist h1{
+    padding: 12px;
+}
+.cardcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 10px;
+    overflow-y: scroll;
+    max-height: 70vh;
+}
+ .card{
+    width:154px;
+    
+    padding: 1px;
+    border-radius: 5px;
+    background-color: rgb(75, 71, 71);
+       position: relative;
+       transition: all 0.9s;
+}
+.card:hover{
+    cursor: pointer;
+    background-color: rgb(132, 125, 125);
+    --a:1;
+}
+.card>*{
+    padding-top: 5px;
+ 
+}
+.card img{
+    width: 100%;
+    object-fit: content;
+}
+.play{
+    
+    width: 28px;
+    height: 28px;
+    background-color: #13bb51;
+    border-radius: 50%;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 121px;
+    right: 6px;
+   opacity:var(--a);
+   transition: all 1s ease-out;
+}
+.button>*{
+    margin: 0 12px;
+}
+.signupbtn{
+background-color:  rgb(56, 54, 54);
+color: rgb(127, 125, 125);   
+font-weight: bold; 
+border: none;
+outline: none;
+font-size: 16px;
+}
+.signupbtn:hover{
+    font-size: 17px;
+    color: aliceblue;
+}
+.loginbtn{
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    padding: 6pxpx;
+    width: 90px;
+    font-size: 16px;
+}
+.loginbtn:hover{
+    
+    font-weight: bold;
+    cursor: pointer;
+
+    font-size: 18px;
+
+}
+
+.playbar{
+    position: absolute;
+    bottom: 0;
+    filter: invert(1);
+    background-color: #dad5d5;
+    width: 95%;
+    padding: 10px;
+    border-radius: 10px;
+}
+.songbtn{
+    display:flex;
+    justify-content: center;
+    gap: 17px;
+}
+.songlist ul {
+padding: 0 0px;
+overflow: auto;
+height: 65vh;
+}
+.songlist ul li{
+    list-style-type: decimal ;
+    display: flex;
+    padding: 1px 2px;
+    gap: 14px;
+    cursor: pointer;
+    justify-content: space-between;
+    border: 1px solid rgb(243, 226, 226);
+    margin: 11px;
+    font-size: 12px;
+    font-weight: 300;
+}
+.playnow{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 5px;
+    
+}
+.playnow span{
+    font-size: 11px;
+    display: flex;
+    width:73px;
+    justify-content: right;
+
+
+}
+#songname{
+    font-weight: 800;
+}
+.seekbar{
+    height: 4px;
+    width:98%;
+     background-color: black;
+    position:absolute;
+    bottom: 0; 
+    border-radius: 10px;
+    margin: 3px;
+    cursor: pointer;
+
+    
+}
+.circle{
+    width: 15px;
+    height: 15px;
+    border-radius: 13px;
+    background-color: black;
+    position: relative;
+    bottom: 7px;
+    left: 0%;
+    transition: left 0.5s;
+}
+.songbtn img{
+    cursor: pointer;
+    padding:0px 12 px;
+}
+.songinfo,.songtime{
+    color: black;
+}
+.abovebar{
+    display: flex;
+    justify-content: space-between;
+}
+.timevol{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.volume{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
